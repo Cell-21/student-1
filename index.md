@@ -1,15 +1,10 @@
 ---
 layout: default
-title: Student Blog
+title: About me (Xavier Celis)
 ---
 
 
 ## Build you Home Page here 
-This is about your journey. Start now!!!
+Hello, My name is Xavier Celis. I love to play basketball and video games. I speak a little bit of spanish and Japanese. My dad was in the United States Marines Corps. I was born in Houston, Texas. I lived in 29 palms before moving to Okinawa Japan. I lived in Japan for 6 years and learned to speak and write some japanese. After not speaking or writing it for 3 years since we moved away I have forgotten most of it. I am very close to my family because growing up I didn't really have anyone else aside from them.
 
-## Overview of Hacks, Study and Tangibles
-Blogging in GitHub pages is a way to learn and code at the same time. 
-
-- Plans, Lists, [Scrum Boards](https://clickup.com/blog/scrum-board/) help you to track key events, show progress and record time.  Effort is a big part of your class grade.  Show plans and time spent!
-- [Hacks(Todo)](https://levelup.gitconnected.com/six-ultimate-daily-hacks-for-every-programmer-60f5f10feae) enable you to stay in focus with key requirements of the class.  Each Hack will produce Tangibles.
-- Tangibles or [Tangible Artifacts](https://en.wikipedia.org/wiki/Artifact_(software_development)) are things you accumulate as a learner and coder. 
+![this is my about me image]({{site.baseurl}}/images/ABT ME.jpg)
