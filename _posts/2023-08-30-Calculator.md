@@ -15,14 +15,18 @@ courses: { compsci: {week: 2} }
       result to take up the entirety of the first row;
       span defines 4 columns and 1 row
     */
+
+    /*change one */
     grid-column: span 4;
-    grid-row: span 1;
+    grid-row: span 2;
+
+ 
+    padding: 0.50em;
+    font-size: 50px; 
+    border: 10px solid pink;
   
-    padding: 0.25em;
-    font-size: 20px;
-    border: 5px solid black;
-  
-    display: flex;
+    
+    display: block;
     align-items: center;
   }
 </style>
@@ -47,11 +51,22 @@ courses: { compsci: {week: 2} }
       <div class="calculator-number">8</div>
       <div class="calculator-number">9</div>
       <div class="calculator-operation">*</div>
-      <!--row 4-->
+           <!--row 4-->
+       <div class="calculator-number">10</div>
+      <div class="calculator-number">11</div>
+      <div class="calculator-number">12</div>
+      <div class="calculator-operation">/</div>
+       <!--row 5-->
+      <div class="calculator-number">13</div>
+      <div class="calculator-number">14</div>
+      <div class="calculator-number">15</div>
+      <div class="calculator-operation">%</div>
+        <!--row 6-->
       <div class="calculator-clear">A/C</div>
       <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
       <div class="calculator-equals">=</div>
+     
   </div>
 </div>
 
@@ -103,7 +118,7 @@ courses: { compsci: {week: 2} }
 
   // Operator action
   function operation (choice) { // function to input operations into the calculator
-      if (firstNumber == null) { // once the operation is chosen, the displayed number is stored into the variable firstNumber
+      if (firstNumber == null) { // once the operat
           firstNumber = parseInt(output.innerHTML);
           nextReady = true;
           operator = choice;
@@ -131,6 +146,9 @@ courses: { compsci: {week: 2} }
               break;
           case "/":
               result = first / second;
+              break;
+          case "%":
+              result = first % second;
               break;
           default: 
               break;
@@ -175,18 +193,26 @@ Vanta animations just for fun, load JS onto the page
 <script src="{{site.baseurl}}/assets/js/vanta.birds.min.js"></script>
 <script src="{{site.baseurl}}/assets/js/vanta.net.min.js"></script>
 <script src="{{site.baseurl}}/assets/js/vanta.rings.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.waves.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.net.min.js"></script>
 
 <script>
 // setup vanta scripts as functions
-var vantaInstances = {
-  halo: VANTA.HALO,
-  birds: VANTA.BIRDS,
-  net: VANTA.NET,
-  rings: VANTA.RINGS
+  var vantaInstances = {
+    waves: VANTA.WAVES,
+    rings: VANTA.RINGS,
+    net: VANTA.NET,
+    birds: VANTA.BIRDS,
+    r119: VANTA.R119,
+    halo: VANTA.HALO,
+  
 };
+</script>
 
+<script>
 // obtain a random vanta function
-var vantaInstance = vantaInstances[Object.keys(vantaInstances)[Math.floor(Math.random() * Object.keys(vantaInstances).length)]];
+var vantaInstance = vantaInstances[Object.keys(vantaInstances)[Math.floor(Math.random() * Object.keys(vantaInstances).length)]]; 
+
 
 // run the animation
 vantaInstance({

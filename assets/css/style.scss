@@ -50,7 +50,7 @@
   /* class to create the calculator's container; uses CSS grid dsiplay to partition off buttons */
   .calculator-container { 
     width: 90vw; /* this width and height is specified for mobile devices by default */
-    height: 80vh;
+    height: 100vh;
     margin: 0 auto;
   
     display: grid;
